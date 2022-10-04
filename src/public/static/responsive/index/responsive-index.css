@@ -1,0 +1,47 @@
+
+
+
+@media screen and (max-width:500px) {  
+
+    .slider{
+        width: 100%;
+        margin: 0;
+    }
+
+    .slider_block {
+        width: 100%;
+        margin: 0;
+    }
+
+
+
+    .slider li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .slider img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .block-img {
+        display: none;
+    }
+
+    .texto-presentacion {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-inf {
+        width: 100%;
+        height: auto;
+    }
+
+    body {
+        width: 100%;
+        height: 2000px;
+    }
+
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width:500px){
+    .texto {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen {
+        width: 100%;
+        height: auto;
+
+        margin-top: 20px;
+    }
+
+    .img {
+        width: 90%;
+        height: 80%;
+    }
+
+    .cuerpo {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body{
+        width: 100%;
+        height: 900px;
+    }
+}

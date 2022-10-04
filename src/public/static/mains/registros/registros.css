@@ -1,0 +1,55 @@
+/* principio */
+
+/*cabeza del texto*/
+
+#title_principal {
+    width: 100%;
+    height: 50px;
+    float: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+#texto_titulo_principal {
+    font: size 190px;
+    font-weight: 900;
+    text-transform:uppercase;
+    text-align: center;
+}
+
+/*fin de cabeza de texto*/
+
+
+/*registros*/
+
+
+
+.reg ul  {
+    list-style: none;
+    float: right;
+}
+
+.reg >li {
+    position: relative;
+    display: inline-block;
+}
+
+.registros > li {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.registros> li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.registros li a:hover {  /*hover es para decirle que al pasar por encima cambie el color*/
+    color:var(--pasar);
+    transition: all .3s;
+}
+/*fin registros*/

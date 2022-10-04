@@ -1,0 +1,31 @@
+footer {
+    width: 100%;
+    height: auto;
+
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    justify-items: center;
+}
+
+.fp1 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.fp2 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    margin-top: 2px;
+}

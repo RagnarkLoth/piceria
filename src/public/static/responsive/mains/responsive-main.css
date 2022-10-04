@@ -1,0 +1,51 @@
+@media screen and (max-width:700px) {
+    .registros {
+        width: 100%;
+        padding-top: 35px;
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #navbar_full {
+        width: 100%;
+        margin: 0;
+
+        box-sizing: border-box;
+    }
+    .navegacion {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0px 0px 0px;
+    }
+    .menu {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .menu>li {
+        width: 32.5%;
+        margin: 0px;
+
+        margin: auto;
+
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .submenu {
+        margin: 0;
+        width: 100%;
+    }
+    
+
+
+    footer {
+        display: none;
+    }
+
+
+}
+

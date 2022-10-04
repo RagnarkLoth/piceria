@@ -1,0 +1,155 @@
+<%- include('../partes/_repetidos') -%>
+
+
+    <link rel="stylesheet" href="../../public/static/index.css">
+    <link rel="stylesheet" href="../../public/static/responsive/mains/responsive-main.css">
+    <link rel="stylesheet" href="../../public/static/responsive/index/responsive-index.css">
+        <title>Principal</title>
+    </head>
+
+
+<body>
+    <!-- principio -->
+        <div class="principio">
+            <header id="title_principal">
+                <h1 id="texto_titulo_principal">PIACERI</h1>
+
+            </header>
+
+            <!-- registros -->
+                <div class="registro">
+                    <nav class="reg">
+                        <ul class="registros">
+                            <li><a href=/registrarse>Registro</a></li>
+                            <li><a href="/iniciar">iniciar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            <!-- registros fin -->
+    |    </div>
+
+    <!--principio -->
+    <!--barra de navegacion-->
+        <div id="navbar_full">
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="/">Inicio</a> </li>
+                    <li><a href="#">Nuestras pizzas</a> 
+                    <ul class="submenu">
+                        <li><a href="/comerciales">Comerciales</a>
+                        <li><a href="/combos">Combos</a></li>
+                        
+                    </ul>
+                    </li>
+                    <li><a href="#">Sobre Nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="/mision">Mision y vision</a></li>
+                        <li><a href="/historia">Nuestra Historia</a></li>
+                    </ul>
+                    </li>
+                
+                    
+                </ul>
+            </nav>
+        </div>
+    <!--fin de navegacion-->
+
+    <!--modo oscuro-->
+        <div class="bloqueo">
+            <ol>
+                <blockquote class="bloque_modo_oscuro">
+                    <label for="dark_mode" class="dark_mode_button" id="mode_color">
+                        <input id="dark_mode" class="mode_colors" type="checkbox" onclick="document.documentElement.classList.toggle('dark_mode')">
+                        ver modo claro
+                    </label>
+                </blockquote>
+            </ol>
+        </div> 
+    <!--fin de modo oscuro-->
+
+
+     <!---presentacion de pizzas-->
+
+        <div class="texto-presentacion">
+            <p id="presentacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam 
+                similique at totam, ut iusto aperiam odio? Quidem, voluptatibus! Molestias adipisci 
+                porro labore officia iure voluptate voluptas at quas quis, totam corrupti, odit 
+                itaque vero? Commodi et debitis odio dignissimos obcaecati a, laboriosam sunt 
+                quasi expedita exercitationem atque, optio maiores corporis!
+            </p>
+        </div>
+    <!--fin de presentacion-->
+
+    <!---slider -->
+        <center><div class="slider">
+
+            <blockquote class="slider_block">
+                <ul>
+                    <li>
+                        <img src="../../public/img/img-index/Cuatro quesos.jpg" class="imagen-slider">
+                    </li>
+                    <li>
+                        <img src="../../public/img/img-index/pizza de chorizo jamon y queso.jpg" class="imagen-slider">
+                    </li>
+                    <li>
+                        <img src="../../public/img/img-index/pizza-hawaiana.jpg" class="imagen-slider">
+                    </li>
+    
+                    <li>
+                        <img src="../../public/img/img-index/pepperoni-pizza-abob-m.jpg" class="imagen-slider">
+                    </li>
+                </ul>
+            </blockquote>
+        </div></center>
+            <!--fin slider-->
+
+            <!-- informacion -->
+
+            <div class="title-inf">
+                <h1>Nuestra Informacion</h1>
+                
+            </div>
+            <hr>
+
+            <div class="inf1">
+                <div class="textos">
+                    <div class="titulo">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="parrafo1">
+                        <p class="p1">te puedes contactar al correo <email>pizza@gmail.com</email></p>
+                        <p class="p2">tambien nos puedes llamar al 3233892768</p>
+                    </div>
+                </div>
+                <div class="block-img">
+                    <img src="../../public/img/img-index/empresario.jpeg" class="foto">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="inf2">
+                <div class="block-img">
+                    <img src="../../public/img/img-index/estadisticas.jpg" class="foto">
+                </div>
+                <div class="textos">
+                    <div class="parrafo2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptates inventore 
+                            facilis, est consequatur reiciendis omnis atque deserunt quod cupiditate ipsum sed magnam. 
+                            Hic animi voluptates quisquam voluptas voluptatibus assumenda sed consectetur, officia ex 
+                            quaerat labore quae quibusdam ipsum facere.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <footer>
+                <p class="fp1"><email>pizeria@gmail.com</email></p>
+                <p class="fp2">Cel:3233892768</p>
+               <p>© derechos de autor</p>
+            </footer>
+
+
+</body>
+</html>

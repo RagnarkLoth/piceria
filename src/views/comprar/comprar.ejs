@@ -1,0 +1,142 @@
+<%- include('../partes/_repetidos') -%>
+
+    <link rel="stylesheet" href="../../public/static/responsive/mains/responsive-main.css">
+    <link rel="stylesheet" href="../../public/static/comprar.css">
+    <title>comprar</title>
+</head>
+<body>
+    <!-- principio -->
+    <div class="principio">
+        <header id="title_principal">
+            <h1 id="texto_titulo_principal">PIACERI</h1>
+
+        </header>
+
+        <!-- registros -->
+            <div class="registro">
+                <nav class="reg">
+                    <ul class="registros">
+                        <li><a href=/registrarse>Registro</a></li>
+                        <li><a href="/iniciar">iniciar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <!-- registros fin -->
+|    </div>
+
+<!--principio -->
+<!--barra de navegacion-->
+    <div id="navbar_full">
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="/">Inicio</a> </li>
+                <li><a href="#">Nuestras pizzas</a> 
+                <ul class="submenu">
+                    <li><a href="/comerciales">Comerciales</a>
+                    <li><a href="/combos">Combos</a></li>
+                    
+                </ul>
+                </li>
+                <li><a href="#">Sobre Nosotros</a>
+                <ul class="submenu">
+                    <li><a href="/mision">Mision y vision</a></li>
+                    <li><a href="/historia">Nuestra Historia</a></li>
+                </ul>
+                </li>
+            
+                
+            </ul>
+        </nav>
+    </div>
+<!--fin de navegacion-->
+
+<!--modo oscuro-->
+    <div class="bloqueo">
+        <ol>
+            <blockquote class="bloque_modo_oscuro">
+                <label for="dark_mode" class="dark_mode_button" id="mode_color">
+                    <input id="dark_mode" class="mode_colors" type="checkbox" onclick="document.documentElement.classList.toggle('dark_mode')">
+                    ver modo claro
+                </label>
+            </blockquote>
+        </ol>
+    </div> 
+<!--fin de modo oscuro-->
+
+    <center><div class="todo">
+
+        <form action="/crear_compra" method="post" >
+
+            
+            <div class="row g-3">
+
+                <div class="col-10">
+                    <label for="correo" class="form-label" >Correo</label>
+                    <input type="email" class="form-control" id="correo" placeholder="Correo" name="correo" >
+                </div>
+                
+                <div class="col-10">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="Telefono" name="telefono">
+                </div>
+                <div class="col-10">
+                  <label for="direccion" class="form-label">Direccion</label>
+                  <input type="text" class="form-control" id="direccion" placeholder="Direccion" name="direccion">
+                </div>
+                <div class="col-10">
+                  <label for="direccion_dos" class="form-label">Direccion 2</label>
+                  <input type="text" class="form-control" id="direccion_dos" placeholder="Apartamento, Estudio, o piso" name="direccion_dos">
+                </div>
+                <div class="col-md-6">
+                    <label for="departamento_fk" class="form-label"></label>
+                    <select id="departamento_fk" class="form-select" name="departamento_fk">
+                      <option >Departamento</option>
+                      <% for(let i = 0; i<departamento.length; i++) {%>
+                        <option value="<%=departamento[i].id_departamento %>"><%=departamento[i].nombre_departamento%></option>
+                      <% } %>
+                      
+                    </select>
+                </div>
+        
+        
+                <div class="col-md-4">
+                  <label for="ciudad_fk" class="form-label"></label>
+        
+                <select id="ciudad_fk" class="form-select" name="ciudad_fk">
+                    <option >ciudad</option>
+                    <% for(let i = 0; i<ciudades.length; i++) {%>
+                        <option value="<%= ciudades[i].id_ciudad %>"><%= ciudades[i].nombre_ciudad%></option>
+                      <% } %>
+                    
+                </select>
+                
+                </div>
+                  <div class="col-md-4">
+                    <label for="tipo_pago_fk" class="form-label"></label>
+        
+                    <select id="tipo_pago_fk" class="form-select" name="tipo_pago_fk">
+                        <option >Tipo de pago</option>
+
+                        <% for(let i = 0; i<tipo_pago.length; i++) {%>
+                            <option value="<%= tipo_pago[i].id_tipo_pago %>"><%= tipo_pago[i].tipo_pago%></option>
+                          <% } %>
+
+                    </select>
+                </div>
+
+                <div class="col-10">
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">comprar</button>
+                </div>
+              </div> 
+        </div>
+        </form></center>
+
+
+
+
+      <script src="/boostrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
